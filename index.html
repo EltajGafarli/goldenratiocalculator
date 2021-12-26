@@ -13,7 +13,7 @@
         function calc(){
             var var1 = document.getElementById('born').value;
             var var2 = document.getElementById('dead').value;
-            var var3 = document.getElementById('sec').value = (((parseInt(var2)-parseInt(var1))/1.61803398875)).toFixed(3);
+            var var3 = document.getElementById('sec').value = ((((var2)-(var1))/1.61803398875)).toFixed(3);
             document.getElementById('first').value = ((var2-var1)-var3).toFixed(3);
         }
     </script>
