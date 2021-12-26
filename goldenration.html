@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ratio</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="./Images/philosophy.png">
+</head>
+<body>
+    <script>
+        function calc(){
+            var var1 = document.getElementById('born').value;
+            var var2 = document.getElementById('dead').value;
+            var var3 = document.getElementById('sec').value = Math.round((parseInt(var2)-parseInt(var1))/1.61803398875);
+            document.getElementById('first').value = (var2-var1)-var3;
+        }
+    </script>
+    <main>
+        <section id="golden-ratio">
+            <h1>Golden Ratio</h1>
+            <div class="container">
+                <div class="golden-ratio">
+                    <div class="calculator introduction">
+                        <h2>Şəxsin Giriş    İnformasiyalari</h2>
+                        
+                        <input type="number" id="born" placeholder="Doğulduğu İl">
+                        <input type="number" id="dead" placeholder="Vəfat etdiyi İl">
+                        <button onclick="calc()">Calculate</button>
+                    </div>
+                    <div class="calculator result">
+                        <h2>Şəxsin Həyatındakı Golden Ratio Dönəmi</h2>
+                        <form action="">
+                            <input type="number" id="first" placeholder="Həyatının 1-ci Golden Ratio Dönəmi" readonly>
+                            <input type="number" id="sec" placeholder="Həyatının 2-ci Golden Ratio Dönəmi" readonly>
+                        </form>
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </main>
+</body>
+</html>
