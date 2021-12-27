@@ -13,8 +13,8 @@
         function calc(){
             var var1 = document.getElementById('born').value;
             var var2 = document.getElementById('dead').value;
-            var var3 = console.log(Math.round(((((var2)-(var1))/1.61803398875))*1000)/1000);
-            document.getElementById('first').value = Math.round(((var2-var1)-var3)*1000)/1000;
+            var var3 = document.getElementById('sec').value = Math.round((parseInt(var2)-parseInt(var1))/1.61803398875);
+            document.getElementById('first').value = (var2-var1)-var3;
         }
     </script>
     <main>
